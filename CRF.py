@@ -18,12 +18,12 @@ if __name__ == "__main__":
 
 # Read training data....
 
-TRdata = pd.read_csv("F:/NLP/Final-data/FullDataForTrain.csv", encoding='utf-16', error_bad_lines=False)  # 12486
+TRdata = pd.read_csv(".../FullDataForTrain.csv", encoding='utf-16', error_bad_lines=False)  # 12486
 TRdata = TRdata.fillna(method="ffill")
 
 # Read testing data...
 
-TEdata = pd.read_csv("F:/NLP/Final-data/FullDataForTest.csv", encoding='utf-16', error_bad_lines=False)  # 3109
+TEdata = pd.read_csv(".../FullDataForTest.csv", encoding='utf-16', error_bad_lines=False)  # 3109
 TEdata = TEdata.fillna(method="ffill")
 
 # Count the number of uniqe words of training data...
