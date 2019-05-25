@@ -36,6 +36,9 @@ if __name__ == "__main__":
 data = pd.read_csv(".../FullDataForTrain.csv", encoding='utf-16', error_bad_lines=False)
 data = data.fillna(method="ffill")
 
+words = list(set(TRdata["word"].values))
+TAG = list(set(TRdata["Label"].values))
+
 class SentenceGetter(object):
 
     def __init__(self, data):
